@@ -70,7 +70,7 @@ export default function App() {
       <div>
         <a
           id="githubLink"
-          href="https://github.com/MilaBorodkina/weather-app"
+          href="https://github.com/MilaBorodkina/react-weather-app"
           target="_blank"
           rel="noreferrer"
         >
