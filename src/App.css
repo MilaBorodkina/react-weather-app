@@ -1,38 +1,80 @@
-.App {
+body {
   text-align: center;
+  font-family: monospace;
+}
+h1 {
+  padding: 25px;
+  font-size: 50px;
+}
+h3,
+h4,
+.currentWeather {
+  padding: 20px;
+}
+h4 {
+  text-transform: capitalize;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card {
+  margin: 30px auto;
+  max-width: 500px;
+  background: rgb(241, 245, 240);
+  background: linear-gradient(
+    0deg,
+    rgba(241, 245, 240, 1) 0%,
+    rgba(211, 226, 209, 1) 100%
+  );
+}
+.currentWeatherImage {
+  font-size: 80px;
+}
+.currentWeatherTemperature {
+  font-size: 30px;
+  padding: 45px 0 15px;
+}
+.currentWeatherParametrs {
+  font-size: 17px;
+  padding: 5px 0 20px;
+}
+.weather-forecast-date {
+  font-size: 20px;
+}
+#celsiusLnk:link,
+#celsiusLnk:visited,
+#celsiusLnk:hover,
+#celsiusLnk:active {
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+.active:hover {
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#githubLink:link,
+#githubLink:visited,
+#githubLink:hover,
+#githubLink:active {
+  color: #007bff;
+  text-decoration: none;
+}
+.forecastDesign {
+  box-shadow: 1px 1px 1px 1px white inset;
+  background: rgb(211, 226, 209);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.weather-forecast-temperature-min {
+  opacity: 0.5;
 }
 
-.App-link {
-  color: #61dafb;
+.weather-forecast-temperatures {
+  font-size: 13px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.forecastImage {
+  width: 60px;
 }
