@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
+import FormattedDate from "./FormattedDate";
 import axios from "axios";
 
 export default function App() {
@@ -51,7 +52,9 @@ export default function App() {
               </div>
             </form>
             <h1 id="currentCity">London</h1>
-            <h3 id="currentDate">Monday, April 18, 16:48</h3>
+            <h3 id="currentDate">
+              <FormattedDate date={weatherData.date} />
+            </h3>
             <h4>{weatherData.description}</h4>
             <div className="row currentWeather">
               <div className="col-6 currentWeatherImage">
